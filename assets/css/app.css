@@ -1,0 +1,1405 @@
+html,
+body {
+    font-family: "Nexa", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    color: #fff;
+}
+
+.da-hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: #0e0d0b;
+    background: url("../images/bg_hero.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-attachment: scroll;
+    width: 100%;
+}
+
+.da-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 23%);
+}
+
+.da-hero__logo {
+    position: relative;
+    padding: 4rem 6rem;
+}
+
+.da-hero__logo img {
+    height: 80px;
+}
+
+.da-hero__description {
+    position: relative;
+    padding: 0 6rem 3rem;
+}
+
+.da-hero__icon img {
+    height: 50px;
+}
+
+.da-hero__info {
+    position: relative;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.da-hero__slogan {
+    width: 55%;
+}
+
+.da-hero__slogan h1 {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    line-height: 1;
+    background: #ffe67d;
+    background: -webkit-linear-gradient(to right, #ffe67d 0%, #93772c 50%, #f2ec8c 100%);
+    background: -moz-linear-gradient(to right, #ffe67d 0%, #93772c 50%, #f2ec8c 100%);
+    background: linear-gradient(to right, #ffe67d 0%, #93772c 50%, #f2ec8c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+.da-hero__slogan b {
+    font-weight: 900;
+}
+
+.da-hero__list-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.da-hero__list-item img {
+    height: 35px;
+    margin-right: 1rem;
+}
+
+.da-shipping {
+    position: relative;
+    display: flex;
+    padding: 1rem 6rem;
+    background: #000;
+}
+
+.da-shipping__item {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.da-shipping__icon {
+    margin-right: 0.8rem;
+}
+
+.da-shipping__icon svg {
+    height: 35px;
+    fill: #ba9849;
+}
+
+.da-shipping__label {
+    position: relative;
+    line-height: 1;
+    margin: 0;
+    font-weight: 300;
+}
+
+.da-gummies {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-top: 10px solid #e07a98;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.23) url("../images/bg_gummies.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: 3rem 6rem;
+}
+
+.da-gummies::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.da-gummies__info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    z-index: 1;
+}
+
+.da-gummies__image {
+    display: block;
+    text-align: end;
+    flex: 1;
+    z-index: 1;
+}
+
+.da-gummies__image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.da-gummies__icons {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.da-gummies__icon-item {
+    flex: 1;
+}
+
+.da-gummies__icon-item:first-child {
+    text-align: end;
+    width: 55%;
+}
+
+.da-gummies__icon-item:first-child img {
+    height: 150px;
+}
+
+.da-gummies__icon-item:last-child {
+    text-align: center;
+    width: 45%;
+}
+
+.da-gummies__icon-item:last-child img:first-child {
+    height: 70px;
+}
+
+.da-gummies__icon-item:last-child img:last-child {
+    height: 50px;
+}
+
+.da-gummies__title {
+    text-transform: uppercase;
+    color: #e07a98;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-top: 100px;
+}
+
+.da-gummies__description {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.da-gomas {
+    position: relative;
+    background-color: #fff;
+    background: url("../images/bg_bubbles.webp");
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 3rem 6rem;
+}
+
+.da-gomas::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.da-gomas__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 50px;
+    padding: 0.7rem;
+}
+
+.da-gomas__title {
+    display: flex;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-style: italic;
+    text-decoration: none;
+    -webkit-text-stroke-color: #000;
+    stroke: #000;
+    background: #ff7b98;
+    margin: 0;
+    line-height: 1;
+    border-radius: 50px;
+    text-align: center;
+    padding: 0.6rem 3rem 0;
+}
+
+.da-gomas__content {
+    position: relative;
+    display: flex;
+    padding: 3rem 3rem 0;
+}
+
+.da-gomas__description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.da-gomas__description p {
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.da-gomas__image {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    width: 50%;
+}
+
+.da-gomas__image img {
+    position: relative;
+    top: -100px;
+    max-width: 100%;
+    height: auto;
+}
+
+.da-gomas__subtitle {
+    position: relative;
+    color: #ff7b98;
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.da-gomas__benefits {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.da-gomas__benefits-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.da-gomas__benefits-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    padding: 2rem;
+}
+
+.da-gomas__benefits-icon {
+    fill: #e07a98;
+    color: #e07a98;
+    border-color: #e07a98;
+    height: 120px;
+    width: 120px;
+}
+
+.da-gomas__benefits-icon svg {
+    position: relative;
+    display: block;
+}
+
+.da-gomas__benefits-icon circle {
+    fill: none;
+    stroke: #ff7b98;
+    stroke-miterlimit: 10;
+    stroke-width: 6.65px;
+}
+
+.da-gomas__benefits-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #ff7b98;
+    padding: 0;
+}
+
+.da-gomas__benefits-description {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.da-gummies-info {
+    position: relative;
+    display: flex;
+    padding: 3rem 6rem;
+    background-color: #001100;
+    background: url("../images/bg_pink.webp");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.da-gummies-info__nutritional,
+.da-gummies-info__description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.da-gummies-info__nutritional img {
+    max-width: 80%;
+    height: auto;
+}
+
+.da-gummies-info__description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-image: url(../images/model_gummie.webp);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.da-gummies-info__description-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #00000063 0%, #f2295b00 100%);
+    padding: 2.5rem;
+    font-size: 1.2rem;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid #e07a98;
+}
+
+.da-gummies-info__description p {
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.da-button-shop {
+    position: relative;
+    font-family: sans-serif;
+    background: rgb(50, 158, 15);
+    background: -moz-linear-gradient(0deg, rgba(50, 158, 15, 1) 0%, rgba(13, 105, 0, 1) 50%, rgba(50, 158, 15, 1) 100%);
+    background: -webkit-linear-gradient(
+        0deg,
+        rgba(50, 158, 15, 1) 0%,
+        rgba(13, 105, 0, 1) 50%,
+        rgba(50, 158, 15, 1) 100%
+    );
+    background: linear-gradient(0deg, rgba(50, 158, 15, 1) 0%, rgba(13, 105, 0, 1) 50%, rgba(50, 158, 15, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#329e0f",endColorstr="#329e0f",GradientType=1);
+    border-radius: 10px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.8rem 1rem;
+    line-height: 1;
+    transition: all 0.1s;
+    margin-bottom: 0.5rem;
+}
+
+.da-gummies-info__description small {
+    text-align: center;
+}
+
+.pulse {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.da-soluble-supplement {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem;
+    background-color: #001100;
+    background: url("../images/soluble_supplement_bg.webp");
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 10px solid #cd0d52;
+}
+
+.da-soluble-supplement__logo {
+    text-align: center;
+}
+
+.da-soluble-supplement__logo img {
+    max-width: 350px;
+    height: auto;
+}
+
+.da-soluble-supplement__logo h3 {
+    font-family: ui-monospace;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.da-soluble-supplement__info {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6rem;
+}
+
+.da-soluble-supplement__description,
+.da-soluble-supplement__product {
+    flex: 1;
+}
+
+.da-soluble-supplement__description h1 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+}
+
+.da-soluble-supplement__description p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.da-soluble-supplement__product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.da-soluble-supplement-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 6rem;
+    background-color: #fff;
+    background: url("../images/supplement_bg.webp");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.da-soluble-supplement-info__title {
+    text-align: center;
+    background: #cd0d52;
+    padding: 0.8rem 3rem 0;
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 0;
+    border-radius: 50px;
+}
+
+.da-soluble-supplement-info__content {
+    position: relative;
+    display: flex;
+    padding: 0 3rem;
+}
+
+.da-soluble-supplement-info__description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.da-soluble-supplement-info__description p {
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.da-soluble-supplement-info__image {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    width: 50%;
+}
+
+.da-soluble-supplement-info__image img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
+
+.da-soluble-supplement-info__subtitle {
+    position: relative;
+    color: #cd0d52;
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.da-soluble-supplement-info__benefits {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.da-soluble-supplement-info__benefits-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.da-soluble-supplement-info__benefits-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    padding: 2rem;
+}
+
+.da-soluble-supplement-info__benefits-icon {
+    fill: #cd0d52;
+    color: #cd0d52;
+    border-color: #cd0d52;
+    height: 120px;
+    width: 120px;
+}
+
+.da-soluble-supplement-info__benefits-icon svg {
+    position: relative;
+    display: block;
+}
+
+.da-soluble-supplement-info__benefits-icon circle {
+    fill: none;
+    stroke: #cd0d52;
+    stroke-miterlimit: 10;
+    stroke-width: 6.65px;
+}
+
+.da-soluble-supplement-info__benefits-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #cd0d52;
+    padding: 0;
+}
+
+.da-soluble-supplement-info__benefits-description {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.da-hyaluronic-acid {
+    position: relative;
+    display: flex;
+    padding: 3rem 6rem;
+    background-color: #001100;
+    background: url("../images/bg_pink.webp");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.da-hyaluronic-acid__nutritional,
+.da-hyaluronic-acid__description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.da-hyaluronic-acid__nutritional img {
+    max-width: 80%;
+    height: auto;
+}
+
+.da-hyaluronic-acid__description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    background-image: url("../images/acid_shop.webp");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.da-hyaluronic-acid__description-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #00000063 0%, #f2295b00 100%);
+    padding: 2.5rem;
+    font-size: 1.2rem;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid #e07a98;
+}
+
+.da-hyaluronic-acid__description p {
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.da-hyaluronic-acid__description small {
+    text-align: center;
+}
+
+.da-info {
+    position: relative;
+    background-color: #fff;
+    padding: 6rem;
+}
+
+.da-info__title {
+    position: relative;
+    width: 80%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ff7b98;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0 auto;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
+.da-info__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.da-info-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    max-width: 50%;
+}
+
+.da-info-box__title {
+    padding: 0.8rem 0 0;
+    text-align: center;
+    background: #ff7b98;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+
+.da-info-box p {
+    color: #000;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.da-info-box img {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    top: 16px;
+    right: 25px;
+}
+
+.da-production {
+    position: relative;
+    background-color: #fff;
+    padding: 6rem;
+    background-image: url("../images/supplement_shop_bg.webp");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.da-production__title {
+    color: #fff;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.da-production__video {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.da-production__video img {
+    max-width: 100%;
+    height: auto;
+}
+
+.da-shop {
+    position: relative;
+    background-color: #fff;
+    padding: 6rem;
+    background-image: url("../images/shop_bg.webp");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.da-shop__header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.da-shop__header img {
+    width: 150px;
+    height: 150px;
+}
+
+.da-shop__header h2 {
+    color: #a38740;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2.1rem;
+    margin-bottom: 1rem;
+}
+
+.da-shop__header p {
+    color: gray;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.da-shop__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.da-shop-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    margin: 1rem;
+    width: calc(50% - 2rem);
+}
+
+.da-shop-box.combo {
+    width: 100%;
+}
+
+.da-shop-box__header {
+    position: relative;
+    background: #fff;
+    border-radius: 25px;
+}
+
+.da-shop-box__title {
+    position: relative;
+    background: #fe7c9a;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+    font-weight: 900;
+}
+
+.da-shop-box__title.green {
+    background: #4f932f;
+}
+
+.da-shop-box.combo .da-shop-box__title {
+    background: #f8b901;
+    background: -webkit-linear-gradient(to right, #f8b901 0%, #cd8810 50%, #f2ec8c 100%);
+    background: -moz-linear-gradient(to right, #f8b901 0%, #cd8810 50%, #f2ec8c 100%);
+    background: linear-gradient(to right, #f8b901 0%, #cd8810 50%, #f2ec8c 100%);
+    color: #000;
+}
+
+.da-shop-box__description {
+    position: relative;
+    color: #666;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 1.3rem;
+    line-height: 1;
+    margin: 0;
+}
+
+.da-shop-box__body {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 2rem;
+}
+
+.da-shop-box__product,
+.da-shop-box__price {
+    width: 50%;
+}
+
+.da-shop-box__product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.da-shop-box__product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.da-shop-box__price {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.da-shop-box__price .da-button-shop {
+    font-size: 1.3rem;
+    border-radius: 50px;
+    margin: 0;
+    padding: 0.3rem 0.8rem;
+    border: 3px solid #a2df42;
+    background: #0d6900;
+}
+
+.da-shop-box.combo .da-button-shop {
+    font-size: 2rem;
+}
+
+.da-shop-box__price h3 {
+    position: relative;
+    background: #fe7c9a;
+    border-radius: 10px;
+    font-size: 2rem;
+    padding: 0.6rem 0.5rem 0;
+}
+
+.da-shop-box__price.brown h3,
+.da-shop-box .da-label.brown {
+    background: #ba9849;
+}
+
+.da-shop-box.combo .da-shop-box__price h3 {
+    background: #f8b901;
+    background: -webkit-linear-gradient(to right, #f8b901 0%, #cd8810 50%, #f2ec8c 100%);
+    background: -moz-linear-gradient(to right, #f8b901 0%, #cd8810 50%, #f2ec8c 100%);
+    background: linear-gradient(to right, #f8b901 0%, #cd8810 50%, #f2ec8c 100%);
+    color: #000;
+}
+
+.da-shop-box__price del {
+    font-size: 2rem;
+    color: #666;
+    font-weight: bold;
+}
+
+.da-shop-box__price h1 {
+    font-size: 4rem;
+    color: #fe7c9a;
+    font-weight: 900;
+    line-height: 1;
+    margin: 1rem 0;
+}
+
+.da-shop-box__price h1 {
+    color: #93772c;
+    font-size: 5rem;
+}
+
+.da-shop-box__price.brown h1 {
+    color: #ba9849;
+}
+
+.da-shop-box__price span {
+    font-size: 2rem;
+}
+
+.da-shop-box .da-label {
+    position: absolute;
+    bottom: 60px;
+    right: 40px;
+    background: #fe7c9a;
+    padding: 0.3rem 0.5rem 0;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.da-security {
+    position: relative;
+    background-color: #fff;
+    padding: 6rem;
+}
+
+.da-security__title {
+    font-size: 3rem;
+    text-align: center;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.da-security__title span {
+    background-color: #ebe1a2;
+    padding: 5px;
+}
+
+.da-security__description {
+    color: #666;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1;
+}
+
+.da-security__row {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1366px;
+    margin: 0 auto;
+    margin-top: 1.3rem;
+}
+
+.da-security-box {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 1;
+    margin: 1rem;
+}
+
+.da-security-box__image {
+    margin-right: 2rem;
+}
+
+.da-security-box__image img {
+    max-width: 100px;
+    height: auto;
+}
+
+.da-security-box__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.da-security-box__description h3 {
+    font-size: 2rem;
+    color: #ccbe79;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.da-security-box__description p {
+    color: #7a7a7a;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+}
+
+.da-footer {
+    box-shadow: 0 16px 30px 0 rgba(0, 0, 0, 0.05) inset;
+    padding: 6rem;
+    color: #666;
+}
+
+.da-footer-logo {
+    position: relative;
+    width: 330px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.da-footer-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.da-footer-container {
+    display: flex;
+}
+
+.da-footer-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.da-column-1 {
+    flex: 2;
+}
+
+.da-column-2 {
+    flex: 1;
+}
+
+.da-column-3 {
+    flex: 1;
+}
+
+.sac-image {
+    width: 50px;
+    height: 50px;
+}
+
+.social-buttons {
+    display: flex;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.4rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+    margin-right: 10px;
+    background-color: #ccbe79;
+}
+
+.social-button svg {
+    width: 25px;
+    height: 25px;
+}
+
+.payment-image {
+    width: 100%;
+    max-width: 300px;
+}
+
+@media (max-width: 800px) {
+    .da-hero {
+        background-position: center;
+    }
+    .da-hero__logo,
+    .da-hero__description,
+    .da-gummies,
+    .da-gomas,
+    .da-gummies-info,
+    .da-soluble-supplement,
+    .da-soluble-supplement-info,
+    .da-hyaluronic-acid,
+    .da-production,
+    .da-info,
+    .da-shop,
+    .da-security,
+    .da-footer {
+        position: relative;
+        padding: 3rem 1rem;
+    }
+
+    .da-hero__logo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .da-hero__icon {
+        display: none;
+    }
+
+    .da-hero__info {
+        flex-direction: column;
+    }
+
+    .da-hero__slogan,
+    .da-hero__list,
+    .da-gomas__description {
+        width: 100%;
+    }
+
+    .da-hero__slogan h1 {
+        font-size: 2rem;
+    }
+
+    .da-shipping {
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .da-shipping__item {
+        margin-bottom: 1rem;
+    }
+
+    .da-gummies,
+    .da-gummies-info {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .da-gummies__icons {
+        flex-direction: column;
+    }
+
+    .da-gummies__icon-item:first-child {
+        text-align: center;
+        width: 100%;
+    }
+
+    .da-gummies__icon-item:last-child,
+    .da-gummies__image {
+        text-align: center;
+        width: 100%;
+    }
+
+    .da-gomas__content,
+    .da-soluble-supplement-info__content {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .da-gomas__image {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .da-gomas__image img {
+        top: 0;
+    }
+
+    .da-gomas__benefits-row,
+    .da-gummies-info__nutritional,
+    .da-gummies-info__description,
+    .da-soluble-supplement-info__description,
+    .da-info__content {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .da-gomas__benefits-item {
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    .da-gummies-info,
+    .da-hyaluronic-acid {
+        background-attachment: scroll;
+    }
+
+    .da-gummies-info__nutritional {
+        margin-bottom: 1rem;
+    }
+
+    .da-gummies-info__nutritional img,
+    .da-hyaluronic-acid__nutritional img,
+    .da-production__video,
+    .da-info-box {
+        max-width: 100%;
+    }
+
+    .da-gummies-info__description-box,
+    .da-hyaluronic-acid__description-box {
+        width: auto;
+        margin-top: 15rem;
+    }
+
+    .da-button-shop {
+        font-size: 1.5rem;
+    }
+
+    .da-soluble-supplement__info,
+    .da-soluble-supplement-info__benefits-row,
+    .da-hyaluronic-acid,
+    .da-shop__content,
+    .da-footer-container {
+        flex-direction: column;
+    }
+
+    .da-soluble-supplement-info__title {
+        margin: 0;
+    }
+
+    .da-soluble-supplement-info__title {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .da-soluble-supplement-info__image {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .da-soluble-supplement-info__benefits-item,
+    .da-shop-box {
+        width: auto;
+        flex-direction: column;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .da-shop-box:first-child{
+        margin-top: 1rem;
+    }
+
+    .da-hyaluronic-acid__nutritional,
+    .da-hyaluronic-acid__description,
+    .da-info__title,
+    .da-shop-box__product,
+    .da-shop-box__price {
+        width: 100%;
+    }
+
+    .da-production__title {
+        margin-bottom: 3rem;
+    }
+
+    .da-info__title {
+        font-size: 1.5rem;
+    }
+
+    .da-info-box__description {
+        text-align: center;
+    }
+
+    .da-info-box img {
+        position: relative;
+        top: auto;
+        right: auto;
+    }
+
+    .da-shop-box__body {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .da-shop-box .da-label {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        padding: 0.3rem 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .da-shop-box__price .da-button-shop {
+        margin: 0 !important;
+    }
+
+    .da-shop-box.combo {
+        width: auto !important;
+    }
+
+    .da-shop-box.combo .da-button-shop {
+        font-size: 1.3rem;
+    }
+
+    .da-security-box__description h3,
+    .da-security__description {
+        font-size: 1rem;
+    }
+
+    .da-shop__header h2 {
+        font-size: 1.5rem;
+    }
+
+    .da-soluble-supplement__description h1,
+    .da-security__title {
+        font-size: 2rem;
+    }
+}

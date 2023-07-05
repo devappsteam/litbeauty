@@ -1,0 +1,19 @@
+{
+    "name": "devapps/litbeauty",
+    "description": "Tema personalizado Wordpress",
+    "type": "wordpress-theme",
+    "license": "GNU",
+    "autoload": {
+        "psr-4": {
+            "DevApps\\": "inc/"
+        }
+    },
+    "authors": [
+        {
+            "name": "DevApps",
+            "email": "contato@devapps.com.br"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
